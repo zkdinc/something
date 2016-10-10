@@ -4,14 +4,17 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using WebServices.Models;
 
 namespace WebServices.Controllers
 {
     public class ValuesController : ApiController
     {
-        public string Get()
+        private ApplicationDbContext db;
+        public IHttpActionResult Get()
         {
-            return "sam the greatest";
+            db = new ApplicationDbContext();
+            return Ok(db.Items.ToList());
         } 
     }
 }

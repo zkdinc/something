@@ -10,7 +10,7 @@ namespace WebServices.Controllers
     {
         public ActionResult Index()
         {
-            ViewBag.Title = "Home Pages";
+            ViewBag.Title = "Homes Pages";
 
             return View();
         }

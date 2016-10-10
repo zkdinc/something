@@ -11,7 +11,7 @@ namespace WebServices.Controllers
     {
         public string Get()
         {
-            return "Hello ala'a, This is my webservice";
+            return "sam the greatest";
         } 
     }
 }
